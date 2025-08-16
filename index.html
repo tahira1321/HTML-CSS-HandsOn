@@ -7,23 +7,46 @@
   <meta name="description" content="自己紹介サイトです。" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- CSSファイルの適用 -->
-  
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
   <div class="page-wrapper">
     <!-- ヘッダー -->
+     <header>
+      <h1><a href="index.html"><img src="img/logo.png" alt="ロゴ画像"></a></h1>
+      <nav>
+        <ul class="main-nav">
+          <li><a href="#profile">Profile</a></li>
+          <li><a href="#article">Article</a></li>
+        </ul>
+      </nav>
+     </header>
 
     <main class="main-content">
       <!-- メインビジュアル -->
+       <img src="img/main_visual.jpg" alt="メインビジュアル">
 
       <!-- プロフィール セクション -->
+       <h2 id="profile">Profile</h2>
+       <img src="img/profile.png" alt="プロフィール画像">
+       <h3 class="name">TAHIRA</h3>
+       <ul>
+        <li>出身：滋賀</li>
+       </ul>
 
       <!-- 記事 セクション -->
+       <h2 id="article">Article</h2>
+       <img src="img/article.jpg" alt="記事サムネイル">
+       <h3 class="article_title">記事タイトル</h3>
+       <p>記事の説明文</p>
 
     </main>
 
     <!-- フッター -->
+     <footer>
+      <p>&copy; 2025 TAHIRA</p>
+     </footer>
 
   </div>
 </body>
