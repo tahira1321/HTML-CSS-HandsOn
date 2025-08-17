@@ -13,10 +13,10 @@
 <body>
   <div class="page-wrapper">
     <!-- ヘッダー -->
-     <header>
-      <h1><a href="index.html"><img src="img/logo.png" alt="ロゴ画像"></a></h1>
+     <header class="header">
+      <img src="img/logo.png" alt="ロゴ画像" class="header-logo">
       <nav>
-        <ul class="main-nav">
+        <ul>
           <li><a href="#profile">Profile</a></li>
           <li><a href="#article">Article</a></li>
         </ul>
@@ -25,52 +25,56 @@
 
     <main class="main-content">
       <!-- メインビジュアル -->
-       <img src="img/main_visual.jpg" alt="メインビジュアル">
-
+       <img src="img/main_visual.jpg" alt="メインビジュアル" class="main-visual">
       <!-- プロフィール セクション -->
-       <h2 id="profile">Profile</h2>
-       <img src="img/profile.png" alt="プロフィール画像">
-       <h3 class="name">TAHIRA</h3>
-       <ul>
-        <li>出身：滋賀</li>
-        <li>趣味：漫画</li>
-        <li>技術：</li>
-        <li>主な仕事：</li>
-       </ul>
+       <section class="section" id="profile">
+         <h2 class="section-title">Profile</h2>
+         <div class="profile">
+           <img src="img/profile.png" alt="プロフィール画像">
+           <div class="profile-info">
+             <h3>TAHIRA</h3>
+             <p>
+              出身：　滋賀<br>
+              趣味：　アプリ開発<br>
+              技術：　Python <br>
+              主な仕事：　マネジメント<br>
+             </p>
+           </div>
+         </div>
+       </section>
 
       <!-- 記事 セクション -->
-       <div id="articles">
-         <div>
-           <h2 class="article">Article</h2>
-           <img src="img/article.jpg" alt="記事サムネイル">
-           <h3 class="article_title">記事タイトル</h3>
-           <p>記事の説明文です。記事の説明文です。記事の説明文です。記事の説明文です。記事の説明文です。</p>
-         </div>
-         <div>
-           <h2 class="article">Article</h2>
-           <img src="img/article.jpg" alt="記事サムネイル">
-           <h3 class="article_title">記事タイトル</h3>
-           <p>記事の説明文です。記事の説明文です。記事の説明文です。記事の説明文です。記事の説明文です。</p>
-         </div>
-         <div>
-           <h2 class="article">Article</h2>
-           <img src="img/article.jpg" alt="記事サムネイル">
-           <h3 class="article_title">記事タイトル</h3>
-           <p>記事の説明文です。記事の説明文です。記事の説明文です。記事の説明文です。記事の説明文です。</p>
-         </div>
-         <div>
-           <h2 class="article">Article</h2>
-           <img src="img/article.jpg" alt="記事サムネイル">
-           <h3 class="article_title">記事タイトル</h3>
-           <p>記事の説明文です。記事の説明文です。記事の説明文です。記事の説明文です。記事の説明文です。</p>
-         </div>
-       </div>
+       <section class="section" id="articles">
+          <h2 class="section-title">Article</h2>
+          <div class="articles">
+            <div class="article">
+              <img src="img/article.jpg" alt="記事サムネイル" class="article-ima">
+              <h3 class="article_title">記事タイトル</h3>
+              <p>記事の説明文です。記事の説明文です。記事の説明文です。記事の説明文です。記事の説明文です。</p>
+            </div>
+            <div class="article">
+              <img src="img/article.jpg" alt="記事サムネイル" class="article-ima">
+              <h3 class="article_title">記事タイトル</h3>
+              <p>記事の説明文です。記事の説明文です。記事の説明文です。記事の説明文です。記事の説明文です。</p>
+            </div>
+            <div class="article">
+              <img src="img/article.jpg" alt="記事サムネイル" class="article-ima">
+              <h3 class="article_title">記事タイトル</h3>
+              <p>記事の説明文です。記事の説明文です。記事の説明文です。記事の説明文です。記事の説明文です。</p>
+            </div>
+            <div class="article">
+              <img src="img/article.jpg" alt="記事サムネイル" class="article-ima">
+              <h3 class="article_title">記事タイトル</h3>
+              <p>記事の説明文です。記事の説明文です。記事の説明文です。記事の説明文です。記事の説明文です。</p>
+            </div>
+          </div>
+       </section>
        
 
     </main>
 
     <!-- フッター -->
-     <footer>
+     <footer class="footer">
       <p>&copy; 2025 TAHIRA</p>
      </footer>
 
@@ -78,3 +82,6 @@
 </body>
 
 </html>
+
+疑問
+1. なぜheader要素にheaderクラスを付けるの
